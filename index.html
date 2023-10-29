@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="game">
+        <h1 id="display">Result:</h1>
+        <h3 id="computer">Computer Choice:</h3>
+        <div class="buttons">
+            <!-- Buttons for user input that call function that runs RPS Game on click -->
+            <button id="test" onclick="letsPlay('Rock')">Rock</button>
+            <button onclick="letsPlay('Paper')">Paper</button>
+            <button onclick="letsPlay('Scissors')">Scissors</button>
+        </div>
+        <!-- Displays current score -->
+        <div class="score">
+            <div class="score-win">
+                <h2>WIN</h2>
+                <p id='win'>0</p>
+            </div>
+            <div class="score-loss">
+                <h2>LOSS</h2>
+                <p id='loss'>0</p>
+            </div>
+            <div class="score-tie">
+                <h2>TIE</h2>
+                <p id='tie'>0</p>
+            </div>
+            <!-- On click runs function that resets score -->
+        </div>
+        <button class="reset" onclick="resetScore()">Reset</button>
+    </div>
+</body>
+
+</html>
